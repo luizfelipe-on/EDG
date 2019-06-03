@@ -78,8 +78,8 @@ print('phi_c =', round(phi_c,2), 'deg')
 print('theta_c =', round(theta_c,2), 'deg \n')
 
 print('É necessário fazer uma correção nos ângulos acima:')
-print('Como x_avg e y_avg phi são negativos, phi não pode ser do 1o quadrante, mas do 3o. Devemos então somar 180 deg a ele;')
-print('Como theta não pode ser negativo, devemos somar 360 deg a ele para depois subtrair 180 deg (ou seja, somar 180 deg). \n')
+print('Como x_avg e y_avg são negativos, phi_c não pode ser do 1o quadrante, mas do 3o. Devemos então somar 180 deg a ele;')
+print('Como theta_c não pode ser negativo, devemos somar 360 deg a ele para depois subtrair 180 deg (ou seja, somar 180 deg). \n')
 
 phi_c = 180 + (180/math.pi * math.atan(y_avg/x_avg))  
 theta_c = 180 + (180/math.pi * (math.atan(np.sqrt(x_avg**2 + y_avg**2)/z_avg)))
